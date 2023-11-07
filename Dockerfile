@@ -11,7 +11,7 @@ RUN apt-get -y install libmysqlclient-dev libssl-dev
 RUN apt-get -y install libpq-dev
 
 # RUN git clone https://github.com/akopytov/sysbench.git sysbench
-RUN git clone git@github.com:ruiming-lu/sysbench.git sysbench
+RUN git clone https://github.com/ruiming-lu/sysbench.git sysbench
 
 WORKDIR sysbench
 RUN ./autogen.sh
