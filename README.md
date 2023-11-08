@@ -5,6 +5,15 @@
 [![Coverage Status][coveralls-badge]][coveralls-url]
 [![License][license-badge]][license-url]
 
+# Misc
+
+```
+git clone https://github.com/akopytov/sysbench.git
+```
+In the file `sysbench/src/drivers/mysql/drv_mysql.c`, modify `MYSQL_OPT_COMPRESSION_ALGORITHMS` in line 420 to be `MYSQL_OPT_COMPRESS`.
+```
+docker build -t rmlu/sysbench:latest .
+```
 <!-- markdown-toc start - Don't edit this section. Run M-x markdown-toc-generate-toc again -->
 **Table of Contents**
 
